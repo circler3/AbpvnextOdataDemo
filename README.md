@@ -1,5 +1,6 @@
 # AbpvnextOdataDemo
 [中文文档](https://github.com/circler3/AbpvnextOdataDemo/blob/main/README.CN.md)
+
 This project illustrates a simple approach towards ABP VNEXT working with ODATA. I think it is still a side-by-side implementation.
 
 ## Introduction

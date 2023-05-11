@@ -39,6 +39,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApp.Blazor", "src\TodoA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{EABB97AE-C907-454B-A18B-6E3630CB72A0}"
 	ProjectSection(SolutionItems) = preProject
+		README.CN.md = README.CN.md
 		README.md = README.md
 	EndProjectSection
 EndProject
