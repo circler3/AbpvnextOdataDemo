@@ -37,15 +37,15 @@ namespace TodoApp
             await _todoItemRepository.DeleteAsync(id);
         }
 
-        public async Task<List<TodoItemDto>> GetListAsync()
+        public async Task<IQueryable<TodoItemDto>> GetListAsync()
         {
-            var items = await _todoItemRepository.GetListAsync();
+            var items = await _todoItemRepository.GetQueryableAsync();
             return items
         .Select(item => new TodoItemDto
         {
             Id = item.Id,
             Text = item.Text
-        }).ToList();
+        }).AsQueryable();
         }
     }
 }
