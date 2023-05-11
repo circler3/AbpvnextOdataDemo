@@ -1,21 +1,21 @@
 # AbpvnextOdataDemo
-ÏîÄ¿ÑÝÊ¾ÁËÒ»ÖÖ¼òµ¥µÄ ABP VNEXT Óë ODATA Í¬Ê±¹¤×÷µÄ·½·¨¡£ÎÒÈÏÎªËüÈÔÈ»ÊÇÒ»¸ö²¢ÐÐÊµÏÖ¡£
+é¡¹ç›®æ¼”ç¤ºäº†ä¸€ç§ç®€å•çš„ ABP VNEXT ä¸Ž ODATA åŒæ—¶å·¥ä½œçš„æ–¹æ³•ã€‚æˆ‘è®¤ä¸ºå®ƒä»ç„¶æ˜¯ä¸€ä¸ªå¹¶è¡Œå®žçŽ°ã€‚
 
-## ½éÉÜ
-ÓÉÓÚABP VNEXT ÏîÄ¿²»Ìá¹©Ö§³Ö OData µÄ NuGet °ü£¬ÄãÐèÒª×Ô¼ºÉèÖÃËùÓÐÄÚÈÝ£¨ÅäÖÃ¡¢EDMµÈ£©¡£±¾ÏîÄ¿»ùÓÚ ABP VNEXT [abp.io](https://abp.io) ÖÐ½Ì³ÌÏîÄ¿£¨ÓÉ abp cli Éú³É£©¡£
+## ä»‹ç»
+ç”±äºŽABP VNEXT é¡¹ç›®ä¸æä¾›æ”¯æŒ OData çš„ NuGet åŒ…ï¼Œä½ éœ€è¦è‡ªå·±è®¾ç½®æ‰€æœ‰å†…å®¹ï¼ˆé…ç½®ã€EDMç­‰ï¼‰ã€‚æœ¬é¡¹ç›®åŸºäºŽ ABP VNEXT [abp.io](https://abp.io) ä¸­æ•™ç¨‹é¡¹ç›®ï¼ˆç”± abp cli ç”Ÿæˆï¼‰ã€‚
 
-ABP VNEXT Ê¹ÓÃ×Ô¶¯Éú³ÉµÄ WebAPI ¿ØÖÆÆ÷»úÖÆ£¬Òò´ËÎÒ½ûÓÃÁË¡°RemoteService¡±£¬±àÐ´ÁËÒ»¸ö×Ô¶¨Òå¿ØÖÆÆ÷À´ÊÖ¶¯ÅäÖÃ OData ²¢ÅäÖÃËüÓÉODataÂ·ÓÉ¡£
+ABP VNEXT ä½¿ç”¨è‡ªåŠ¨ç”Ÿæˆçš„ WebAPI æŽ§åˆ¶å™¨æœºåˆ¶ï¼Œå› æ­¤æˆ‘ç¦ç”¨äº†â€œRemoteServiceâ€ï¼Œç¼–å†™äº†ä¸€ä¸ªè‡ªå®šä¹‰æŽ§åˆ¶å™¨æ¥æ‰‹åŠ¨é…ç½® OData å¹¶é…ç½®å®ƒç”±ODataè·¯ç”±ã€‚
 
-## ÓÃ·¨
-½« `TodoApp.HttpApi.Api.Host` ÉèÖÃÎªÆðÊ¼ÏîÄ¿²¢ÔËÐÐ¡£
+## ç”¨æ³•
+å°† `TodoApp.HttpApi.Api.Host` è®¾ç½®ä¸ºèµ·å§‹é¡¹ç›®å¹¶è¿è¡Œã€‚
 
-Í¨¹ý GET `/api/app/Todo` Æô¶¯ OData ²éÑ¯¡£ÀýÈç `/api/app/Todo?$count=true`¡£
-·ÃÎÊ `/api/app/$metadata#Todo` »ñÈ¡ DTO µÄ edm Ä£ÐÍ¡£
+é€šè¿‡ GET `/api/app/Todo` å¯åŠ¨ OData æŸ¥è¯¢ã€‚ä¾‹å¦‚ `/api/app/Todo?$count=true`ã€‚
+è®¿é—® `/api/app/$metadata#Todo` èŽ·å– DTO çš„ edm æ¨¡åž‹ã€‚
 
-## ÃâÔðÉùÃ÷
-¸ÃÏîÄ¿½öÎªÑÝÊ¾ÏîÄ¿¡£ÔÚ OData ÊµÏÖ²¿·ÖÈ±·¦É÷ÖØÉè¼Æ¡£**ÇÐÎð**ÔÚÉú²úÖÐÊ¹ÓÃ¡£
+## å…è´£å£°æ˜Ž
+è¯¥é¡¹ç›®ä»…ä¸ºæ¼”ç¤ºé¡¹ç›®ã€‚åœ¨ OData å®žçŽ°éƒ¨åˆ†ç¼ºä¹æ…Žé‡è®¾è®¡ã€‚**åˆ‡å‹¿**åœ¨ç”Ÿäº§ä¸­ä½¿ç”¨ã€‚
 
-## Ïà¹ØÄÚÈÝ
-ÎÒ½«»ùÓÚÕâ¸öÊµÏÖ×«Ð´²©ÎÄ£¬»¹Çë¹Ø×¢¡£
+## ç›¸å…³å†…å®¹
+æˆ‘å°†åŸºäºŽè¿™ä¸ªå®žçŽ°æ’°å†™åšæ–‡ï¼Œè¿˜è¯·å…³æ³¨ã€‚
 
-ÏÖÔÚÒÑ¾­ÓÐ¼¸Æª[¹ØÓÚODataµÄÎÄÕÂ](https://www.cnblogs.com/podolski/collections/961)£¬ÕâÐ©ÎÄÕÂ¿ÉÄÜ¶ÔÑ§Ï°Ê¹ÓÃODataÓÐËù°ïÖú¡£
+çŽ°åœ¨å·²ç»æœ‰å‡ ç¯‡[å…³äºŽODataçš„æ–‡ç« ](https://www.cnblogs.com/podolski/collections/961)ï¼Œè¿™äº›æ–‡ç« å¯èƒ½å¯¹å­¦ä¹ ä½¿ç”¨ODataæœ‰æ‰€å¸®åŠ©ã€‚
