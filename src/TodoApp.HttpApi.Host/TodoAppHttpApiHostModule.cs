@@ -86,15 +86,14 @@ public class TodoAppHttpApiHostModule : AbpModule
             opt.RouteOptions.EnablePropertyNameCaseInsensitive = true;
             opt.RouteOptions.EnableQualifiedOperationCall = false;
             opt.Expand().Filter().Count().OrderBy().Filter().SetMaxTop(30);
-            opt.RouteOptions.EnableKeyAsSegment = false;
-            opt.AddRouteComponents("api", GetEdmModels());
+            opt.AddRouteComponents("api/app/", GetEdmModels());
         });
     }
 
     private IEdmModel GetEdmModels()
     {
         var builder = new ODataConventionModelBuilder();
-        var device = builder.EntitySet<TodoItemDto>("TodoAppImpl").EntityType.HasKey(w => w.Id);
+        var device = builder.EntitySet<TodoItemDto>("Todo").EntityType.HasKey(w => w.Id);
 
         return builder.GetEdmModel();
     }
@@ -241,6 +240,7 @@ public class TodoAppHttpApiHostModule : AbpModule
 
         if (env.IsDevelopment())
         {
+            app.UseODataRouteDebug();
             app.UseDeveloperExceptionPage();
         }
 

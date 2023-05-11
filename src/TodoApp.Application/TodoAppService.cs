@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Volo.Abp;
 using Volo.Abp.Application.Services;
 using Volo.Abp.Domain.Repositories;
 
 namespace TodoApp
 {
+    [RemoteService(false)]
     public class TodoAppService : ApplicationService, ITodoAppService
     {
         private readonly IRepository<TodoItem, Guid> _todoItemRepository;

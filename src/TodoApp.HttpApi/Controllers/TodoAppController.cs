@@ -20,11 +20,11 @@ public abstract class TodoAppController : AbpControllerBase
 }
 
 
-public class TodoAppImplController : TodoAppController
+public class TodoController : TodoAppController
 {
     private readonly ITodoAppService todoAppService;
 
-    public TodoAppImplController(ITodoAppService todoAppService)
+    public TodoController(ITodoAppService todoAppService)
        :base() 
     {
         this.todoAppService = todoAppService;
